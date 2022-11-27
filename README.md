@@ -40,19 +40,19 @@ git clone https://github.com/eric-bixby/dotfiles.git
 ### Installing all symlinks
 
 ```bash
-stow -t "$HOME" -S *
+stow -t "$HOME" -S */
 ```
 
 ### Uninstalling all symlinks
 
 ```bash
-stow -t "$HOME" -D *
+stow -t "$HOME" -D */
 ```
 
 ### Repairing all symlinks
 
 ```bash
-stow -t "$HOME" -R *
+stow -t "$HOME" -R */
 ```
 
 ### Installing specific dotfiles
