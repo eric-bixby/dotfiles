@@ -61,9 +61,4 @@ stow -t "$HOME" -R */
 stow -t "$HOME" -S git
 ```
 
-## Verification
-
-If there are no errors, everything in that directory should be symlinked.
-Check by doing a quick `ls -al ~/`
-
 ---
