@@ -61,4 +61,14 @@ stow -t "$HOME" -R */
 stow -t "$HOME" -S git
 ```
 
+## Troubleshooting
+
+### Issue: get the following error when uninstalling:
+
+```
+BUG in find_stowed_path? Absolute/relative mismatch between Stow dir git/dotfiles and path <PATH> at /usr/local/Cellar/stow/2.3.1//Library/Perl/5.30/Stow.pm line 966, <DATA> line 22.
+````
+
+### Workaround: remove symlinks in target folder or manually uninstall
+
 ---
