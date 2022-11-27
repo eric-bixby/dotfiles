@@ -22,7 +22,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git zsh-autosuggestions zsh-syntax-highlighting web-search)
+plugins=(aliases brew docker git python zsh-autosuggestions zsh-syntax-highlighting web-search)
 
 # Activate oh-my-zsh
 source $ZSH/oh-my-zsh.sh
@@ -94,15 +94,9 @@ prompt_end() {
 }
 
 # Functions:END -----------------------
+
 # Aliases:BEGIN -----------------------
-
-alias npm_list='npm list -g --depth=0 2>&1|grep -v "peer dep missing"'
-alias mount_docs='mount_docs.sh && rehash'
-alias rm='trash-put -iv'
-alias site_build='cd_git_site && bundle exec jekyll build'
-alias site_run='cd_git_site && bundle exec jekyll serve'
-alias site_update='cd_git_site && bundle update'
-
+alias remount_docs='mount_docs.sh && rehash'
 # Aliases:END -------------------------
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.

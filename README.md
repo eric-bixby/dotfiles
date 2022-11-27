@@ -32,7 +32,7 @@ brew install stow
 ## Cloning this repo
 
 ```bash
-git clone https://github.com/eric-bixby/dotfiles.git && cd dotfiles
+git clone https://github.com/eric-bixby/dotfiles.git
 ```
 
 ## Using `stow`
@@ -61,20 +61,9 @@ stow -t "$HOME" -R *
 stow -t "$HOME" -S git
 ```
 
+## Verification
+
 If there are no errors, everything in that directory should be symlinked.
 Check by doing a quick `ls -al ~/`
-
-## Troubleshooting
-
-### Error: File conflicts
-
-```
-WARNING! stowing git would cause conflicts:
-  * existing target is neither a link nor a directory: .gitconfig
-```
-
-### Solution
-
-Delete or move file in question
 
 ---
