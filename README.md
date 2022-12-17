@@ -69,6 +69,6 @@ stow -t "$HOME" -S git
 BUG in find_stowed_path? Absolute/relative mismatch between Stow dir <PWD> and path <SYMLINK_PATH> at /usr/local/Cellar/stow/2.3.1//Library/Perl/5.30/Stow.pm line 966, <DATA> line 22.
 ```
 
-### Workaround: Remove symlinks in target folder
+### Workaround: Ignore or remove existing symlinks in target folder
 
 ---
