@@ -38,6 +38,12 @@ export PATH=$PATH:~/Docs/Code/BASH
 export PATH=$PATH:~/Docs/Code/BASH/MyDevApps
 export PATH=$PATH:~/Docs/Code/BASH/MyMacApps
 
+# Set path for local node tools
+export PATH=$PATH:./node_modules/.bin
+
+# Doing this is prevent warning during pip3 install
+export PATH=$PATH:~/Library/Python/3.9/bin
+
 # Set default editor
 export EDITOR=vi
 
@@ -74,8 +80,12 @@ cd_git_site() {
     cd_git eric-bixby.github.io/$*
 }
 
+cd_icloud() {
+    cd "${HOME}/Library/Mobile Documents/com~apple~CloudDocs/$*"
+}
+
 cd_icloud_docs() {
-    cd "${HOME}/Library/Mobile Documents/com~apple~CloudDocs/Documents/$*"
+    cd_icloud Documents/$*
 }
 
 # Set custom prompt with newline
@@ -96,6 +106,9 @@ prompt_end() {
 # Functions:END -----------------------
 
 # Aliases:BEGIN -----------------------
+alias brew_leaves='brew leaves | xargs brew deps --formula --for-each | sed "s/^.*:/$(tput setaf 4)&$(tput sgr0)/"'
+alias docker_rm_stopped='docker ps --filter status=exited -q|xargs docker rm'
+alias npm_list='npm list -g --depth=0 2>&1|grep -v "peer dep missing"'
 alias remount_docs='mount_docs.sh && rehash'
 # Aliases:END -------------------------
 
@@ -104,4 +117,9 @@ alias remount_docs='mount_docs.sh && rehash'
 
 # Enable autojump
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+
+# Enable nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && \. "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
+[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
