@@ -108,8 +108,8 @@ prompt_end() {
 # Aliases:BEGIN -----------------------
 alias brew_leaves='brew leaves | xargs brew deps --formula --for-each | sed "s/^.*:/$(tput setaf 4)&$(tput sgr0)/"'
 alias docker_rm_stopped='docker ps --filter status=exited -q|xargs docker rm'
-alias npm_list='npm list -g --depth=0 2>&1|grep -v "peer dep missing"'
-alias pip_top='pipdeptree|grep "=="'
+alias npm_leaves='npm list -g --depth=0 2>&1|grep -v "peer dep missing"'
+alias pip_leaves='pipdeptree|grep "=="'
 alias remount_docs='mount_docs.sh && rehash'
 # Aliases:END -------------------------
 

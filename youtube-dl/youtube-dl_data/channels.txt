@@ -1,0 +1,26 @@
+### This is where you input all the YouTube channels you want to have videos downloaded from.
+### It is recommended to use the ID-based URLs, they look like: '/channel/UC0vaVaSyV14uvJ4hEZDOl0Q', as the other ones might get changed.
+### You find the ID-based URL by going to a video and clicking on the uploader.
+#
+# One per line
+# Name
+#https://www.youtube.com/user/channel_username
+# Another one
+#https://www.youtube.com/channel/UC0vaVaSyV14uvJ4hEZDOl0Q
+#
+https://www.youtube.com/feeds/videos.xml?channel_id=UCzmwnZ_ZElg6kuE6e5QS4pg
+https://www.youtube.com/feeds/videos.xml?channel_id=UCg6gPGh8HU2U01vaFCAsvmQ
+https://www.youtube.com/feeds/videos.xml?channel_id=UCaSCt8s_4nfkRglWCvNSDrg
+https://www.youtube.com/feeds/videos.xml?channel_id=UCvlVuntLjdURVD3b3Hx7kxw
+https://www.youtube.com/feeds/videos.xml?channel_id=UCF8e8zKZ_yk7cL9DvvWGSEw
+https://www.youtube.com/feeds/videos.xml?channel_id=UCbiGcwDWZjz05njNPrJU7jA
+https://www.youtube.com/feeds/videos.xml?channel_id=UCR-DXc1voovS8nhAvccRZhg
+https://www.youtube.com/feeds/videos.xml?channel_id=UCGvIBxqin_rx3sY9qacQEhQ
+https://www.youtube.com/feeds/videos.xml?channel_id=UC9x0AN7BWHpCDHSm9NiJFJQ
+https://www.youtube.com/feeds/videos.xml?channel_id=UC6gARF3ICgaLfs3o2znuqXA
+https://www.youtube.com/feeds/videos.xml?channel_id=UCO2x-p9gg9TLKneXlibGR7w
+https://www.youtube.com/feeds/videos.xml?channel_id=UCjSEJkpGbcZhvo0lr-44X_w
+https://www.youtube.com/feeds/videos.xml?channel_id=UC8uT9cgJorJPWu7ITLGo9Ww
+https://www.youtube.com/feeds/videos.xml?channel_id=UC5UAwBUum7CPN5buc-_N1Fw
+https://www.youtube.com/feeds/videos.xml?channel_id=UCsnGwSIHyoYN0kiINAGUKxg
+https://www.youtube.com/feeds/videos.xml?channel_id=UCr6JcgG9eskEzL-k6TtL9EQ
