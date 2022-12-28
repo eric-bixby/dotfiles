@@ -111,6 +111,7 @@ alias docker_rm_stopped='docker ps --filter status=exited -q|xargs docker rm'
 alias npm_leaves='npm list -g --depth=0 2>&1|grep -v "peer dep missing"'
 alias pip_leaves='pipdeptree|grep "=="'
 alias remount_docs='mount_docs.sh && rehash'
+alias ssh_nas='ssh root@nas-ba-f3-f8.local'
 # Aliases:END -------------------------
 
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
