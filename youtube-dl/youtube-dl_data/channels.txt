@@ -10,7 +10,6 @@
 #
 https://www.youtube.com/feeds/videos.xml?channel_id=UCzmwnZ_ZElg6kuE6e5QS4pg
 https://www.youtube.com/feeds/videos.xml?channel_id=UCg6gPGh8HU2U01vaFCAsvmQ
-https://www.youtube.com/feeds/videos.xml?channel_id=UCaSCt8s_4nfkRglWCvNSDrg
 https://www.youtube.com/feeds/videos.xml?channel_id=UCvlVuntLjdURVD3b3Hx7kxw
 https://www.youtube.com/feeds/videos.xml?channel_id=UCF8e8zKZ_yk7cL9DvvWGSEw
 https://www.youtube.com/feeds/videos.xml?channel_id=UCbiGcwDWZjz05njNPrJU7jA

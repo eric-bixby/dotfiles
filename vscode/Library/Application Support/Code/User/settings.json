@@ -1,0 +1,17 @@
+{
+  "workbench.colorTheme": "Default Dark+",
+  "terminal.integrated.fontFamily": "MesloLGS NF",
+  "eslint.format.enable": true,
+  "eslint.codeActionsOnSave.rules": null,
+  "[javascript]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+  },
+  "editor.formatOnSave": true,
+  "workbench.startupEditor": "none",
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  }
+}
