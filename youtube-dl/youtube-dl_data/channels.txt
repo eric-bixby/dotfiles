@@ -8,18 +8,48 @@
 # Another one
 #https://www.youtube.com/channel/UC0vaVaSyV14uvJ4hEZDOl0Q
 #
+# Brian Tong
 https://www.youtube.com/feeds/videos.xml?channel_id=UCzmwnZ_ZElg6kuE6e5QS4pg
+#
+# Chris Titus Tech
 https://www.youtube.com/feeds/videos.xml?channel_id=UCg6gPGh8HU2U01vaFCAsvmQ
+#
+# Dry Bar Comedy
 https://www.youtube.com/feeds/videos.xml?channel_id=UCvlVuntLjdURVD3b3Hx7kxw
+#
+# Edmunds Cars
 https://www.youtube.com/feeds/videos.xml?channel_id=UCF8e8zKZ_yk7cL9DvvWGSEw
+#
+# ExplainingComputers
 https://www.youtube.com/feeds/videos.xml?channel_id=UCbiGcwDWZjz05njNPrJU7jA
+#
+# Jeff Geerling
 https://www.youtube.com/feeds/videos.xml?channel_id=UCR-DXc1voovS8nhAvccRZhg
+#
+# Mashed
 https://www.youtube.com/feeds/videos.xml?channel_id=UCGvIBxqin_rx3sY9qacQEhQ
+#
+# NetworkChuck
 https://www.youtube.com/feeds/videos.xml?channel_id=UC9x0AN7BWHpCDHSm9NiJFJQ
+#
+# Retro Recipes
 https://www.youtube.com/feeds/videos.xml?channel_id=UC6gARF3ICgaLfs3o2znuqXA
+#
+# Snazzy Labs
 https://www.youtube.com/feeds/videos.xml?channel_id=UCO2x-p9gg9TLKneXlibGR7w
+#
+# TechHut
 https://www.youtube.com/feeds/videos.xml?channel_id=UCjSEJkpGbcZhvo0lr-44X_w
+#
+# The 8-Bit Guy
 https://www.youtube.com/feeds/videos.xml?channel_id=UC8uT9cgJorJPWu7ITLGo9Ww
+#
+# The Linux Experiment
 https://www.youtube.com/feeds/videos.xml?channel_id=UC5UAwBUum7CPN5buc-_N1Fw
+#
+# Wolfgang's Channel
 https://www.youtube.com/feeds/videos.xml?channel_id=UCsnGwSIHyoYN0kiINAGUKxg
+#
+# ZONEofTECH
 https://www.youtube.com/feeds/videos.xml?channel_id=UCr6JcgG9eskEzL-k6TtL9EQ
+
