@@ -4,14 +4,18 @@
   "eslint.format.enable": true,
   "eslint.codeActionsOnSave.rules": null,
   "[javascript]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    "editor.defaultFormatter": "esbenp.prettier-vscode",
+    "editor.autoClosingBrackets": "languageDefined"
   },
   "[javascriptreact]": {
-    "editor.defaultFormatter": "dbaeumer.vscode-eslint"
+    "editor.defaultFormatter": "dbaeumer.vscode-eslint",
+    "editor.autoClosingBrackets": "languageDefined"
   },
   "editor.formatOnSave": true,
   "workbench.startupEditor": "none",
   "[html]": {
     "editor.defaultFormatter": "vscode.html-language-features"
-  }
+  },
+  "editor.minimap.enabled": false,
+  "git.confirmSync": false
 }
