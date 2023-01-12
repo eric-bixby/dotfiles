@@ -17,5 +17,6 @@
     "editor.defaultFormatter": "vscode.html-language-features"
   },
   "editor.minimap.enabled": false,
-  "git.confirmSync": false
+  "git.confirmSync": false,
+  "redhat.telemetry.enabled": true
 }
