@@ -18,5 +18,11 @@
   },
   "editor.minimap.enabled": false,
   "git.confirmSync": false,
-  "redhat.telemetry.enabled": true
+  "redhat.telemetry.enabled": true,
+  "[python]": {
+    "editor.formatOnType": true
+  },
+  "[json]": {
+    "editor.defaultFormatter": "vscode.json-language-features"
+  }
 }
