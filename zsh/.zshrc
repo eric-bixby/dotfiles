@@ -60,6 +60,10 @@ cd_code_bash() {
     cd_code BASH/$*
 }
 
+cd_code_java() {
+    cd_code Java/$*
+}
+
 cd_code_py() {
     cd_code Python/$*
 }
