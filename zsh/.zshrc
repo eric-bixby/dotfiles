@@ -72,6 +72,10 @@ cd_docs() {
     cd ~/Docs/$*
 }
 
+cd_dl() {
+    cd_code_java DownloadLinks/$*
+}
+
 cd_git() {
     cd ~/git/$*
 }
