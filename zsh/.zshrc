@@ -41,9 +41,6 @@ export PATH=$PATH:~/Docs/Code/BASH/MyMacApps
 # Set path for local node tools
 export PATH=$PATH:./node_modules/.bin
 
-# Doing this is prevent warning during pip3 install
-export PATH=$PATH:~/Library/Python/3.9/bin
-
 # Set default editor
 export EDITOR=vi
 
