@@ -81,6 +81,14 @@ cd_git_asb() {
     cd_git auto-sort-bookmarks-webext/$*
 }
 
+cd_git_bm() {
+    cd_git bookmarks/$*
+}
+
+cd_git_dot() {
+    cd_git dotfiles/$*
+}
+
 cd_git_site() {
     cd_git eric-bixby.github.io/$*
 }
@@ -111,11 +119,12 @@ prompt_end() {
 # Functions:END -----------------------
 
 # Aliases:BEGIN -----------------------
-alias brew_leaves='brew leaves | xargs brew deps --formula --for-each | sed "s/^.*:/$(tput setaf 4)&$(tput sgr0)/"'
-alias dl='pushd;cd_dl && ./run.sh;popd'
+alias brew_leaves='brew leaves | xargs brew deps --formula --for-each | sed "s/^.*:/$(tput setaf 4)&$(tput sgr0)/"|grep -v six'
+alias dl='pushd .;cd_dl && ./run.sh;popd'
 alias docker_rm_stopped='docker ps --filter status=exited -q|xargs docker rm'
+alias matrix='cmatrix'
 alias npm_leaves='npm list -g --depth=0 2>&1|grep -v "peer dep missing"'
-alias pip_leaves='pipdeptree|grep "=="'
+alias pip_leaves='pipdeptree|grep "=="|grep -v "pip="|grep -v setuptools|grep -v six|grep -v wheel'
 alias remount_docs='mount_docs.sh && rehash'
 alias ssh_nas='ssh root@nas-ba-f3-f8.local'
 alias ssh_pi='ssh pi@raspberrypi.local'
