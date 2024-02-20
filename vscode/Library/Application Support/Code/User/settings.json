@@ -1,5 +1,4 @@
 {
-  "workbench.colorTheme": "Default Dark+",
   "terminal.integrated.fontFamily": "MesloLGS NF",
   "eslint.format.enable": true,
   "eslint.codeActionsOnSave.rules": null,

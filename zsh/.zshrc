@@ -37,6 +37,7 @@ export PATH=$PATH:$HOME/bin
 export PATH=$PATH:~/Docs/Code/BASH
 export PATH=$PATH:~/Docs/Code/BASH/MyDevApps
 export PATH=$PATH:~/Docs/Code/BASH/MyMacApps
+export PATH=$PATH:~/Docs/Code/Python
 
 # Set path for local node tools
 export PATH=$PATH:./node_modules/.bin
