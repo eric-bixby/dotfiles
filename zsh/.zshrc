@@ -34,6 +34,7 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 
 # Set path for my personal scripts
 export PATH=$PATH:$HOME/bin
+export PATH=$PATH:~/.local/bin
 export PATH=$PATH:~/Docs/Code/BASH
 export PATH=$PATH:~/Docs/Code/BASH/MyDevApps
 export PATH=$PATH:~/Docs/Code/BASH/MyMacApps
@@ -126,7 +127,7 @@ alias docker_rm_stopped='docker ps --filter status=exited -q|xargs docker rm'
 alias matrix='cmatrix'
 alias npm_leaves='npm list -g --depth=0 2>&1|grep -v "peer dep missing"'
 alias pip_leaves='pipdeptree|grep "=="|grep -v "pip="|grep -v setuptools|grep -v six|grep -v wheel'
-alias remount_docs='mount_docs.sh && rehash'
+alias rl='cd_git_bm home && get_reading_list.py > readinglist.md'
 alias ssh_nas='ssh root@nas-ba-f3-f8.local'
 alias ssh_pi='ssh pi@raspberrypi.local'
 # Aliases:END -------------------------
@@ -147,4 +148,7 @@ export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-20.jdk/Contents/Home
 
 # Added by Docker Desktop
 source /Users/ericbixby/.docker/init-zsh.sh || true
+
+# Activate Python
+source .venv/bin/activate
 
