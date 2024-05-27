@@ -149,6 +149,7 @@ export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-20.jdk/Contents/Home
 # Added by Docker Desktop
 source /Users/ericbixby/.docker/init-zsh.sh || true
 
-# Activate Python
-source .venv/bin/activate
+# Activate venv for Python
+# py -m venv .venv
+source ~/.venv/bin/activate
 
