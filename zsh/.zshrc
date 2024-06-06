@@ -138,18 +138,18 @@ alias ssh_pi='ssh pi@raspberrypi.local'
 # Enable autojump
 [ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
 
-# Enable nvm
+# Enable nvm (Python)
 export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/nvm.sh" ] && \. "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
 [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
 
+# Activate venv (Python)
+# py -m venv .venv
+source ~/.venv/bin/activate
+
 # JDK
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-20.jdk/Contents/Home
 
-# Added by Docker Desktop
+# Enable zsh for Docker Desktop
 source /Users/ericbixby/.docker/init-zsh.sh || true
-
-# Activate venv for Python
-# py -m venv .venv
-source ~/.venv/bin/activate
 
