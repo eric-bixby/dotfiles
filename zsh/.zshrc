@@ -43,11 +43,14 @@ export PATH=$PATH:~/Docs/Code/Python
 # Set path for local node tools
 export PATH=$PATH:./node_modules/.bin
 
+# Enable vscode command-line
+export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PATH"
+
 # Set default editor
 export EDITOR=vi
 
-# Enable vscode command-line
-export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PATH"
+# Hide homwbrew hints
+export HOMEBREW_NO_ENV_HINTS=true
 
 # Functions:BEGIN ---------------------
 
@@ -135,8 +138,7 @@ alias ssh_pi='ssh pi@raspberrypi.local'
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
-# Enable autojump
-[ -f /usr/local/etc/profile.d/autojump.sh ] && . /usr/local/etc/profile.d/autojump.sh
+# FIXME:begin: don't need nvm and venv so pick one
 
 # Enable nvm (Python)
 export NVM_DIR="$HOME/.nvm"
@@ -146,6 +148,8 @@ export NVM_DIR="$HOME/.nvm"
 # Activate venv (Python)
 # py -m venv .venv
 source ~/.venv/bin/activate
+
+# FIXME:end
 
 # JDK
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-20.jdk/Contents/Home
