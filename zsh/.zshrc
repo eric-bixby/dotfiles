@@ -22,7 +22,7 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(aliases brew docker git python zsh-autosuggestions zsh-syntax-highlighting web-search)
+plugins=(aliases brew git python zsh-autosuggestions zsh-syntax-highlighting web-search)
 
 # Activate oh-my-zsh
 source $ZSH/oh-my-zsh.sh
@@ -94,6 +94,10 @@ cd_git_dot() {
     cd_git dotfiles/$*
 }
 
+cd_git_notes() {
+    cd_git notes/$*
+}
+
 cd_git_site() {
     cd_git eric-bixby.github.io/$*
 }
@@ -155,5 +159,5 @@ source ~/.venv/bin/activate
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-20.jdk/Contents/Home
 
 # Enable zsh for Docker Desktop
-source /Users/ericbixby/.docker/init-zsh.sh || true
+#source /Users/ericbixby/.docker/init-zsh.sh || true
 

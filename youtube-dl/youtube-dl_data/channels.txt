@@ -26,9 +26,6 @@ https://www.youtube.com/feeds/videos.xml?channel_id=UCbiGcwDWZjz05njNPrJU7jA
 # Jeff Geerling
 https://www.youtube.com/feeds/videos.xml?channel_id=UCR-DXc1voovS8nhAvccRZhg
 #
-# Mashed
-https://www.youtube.com/feeds/videos.xml?channel_id=UCGvIBxqin_rx3sY9qacQEhQ
-#
 # NetworkChuck
 https://www.youtube.com/feeds/videos.xml?channel_id=UC9x0AN7BWHpCDHSm9NiJFJQ
 #
