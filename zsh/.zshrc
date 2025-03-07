@@ -134,7 +134,7 @@ alias docker_rm_stopped='docker ps --filter status=exited -q|xargs docker rm'
 alias matrix='cmatrix'
 alias npm_leaves='npm list -g --depth=0 2>&1|grep -v "peer dep missing"'
 alias pip_leaves='pipdeptree|grep "=="|grep -v "pip="|grep -v setuptools|grep -v six|grep -v wheel'
-alias rl='cd_git_bm home && get_reading_list.py > readinglist-`date "+%Y%m%d-%H%M%S"`.md'
+alias rl='cd_git_notes home && get_reading_list.py >> ReadingList.md'
 alias ssh_nas='ssh root@nas-ba-f3-f8.local'
 alias ssh_pi='ssh pi@raspberrypi.local'
 # Aliases:END -------------------------
