@@ -1,3 +1,8 @@
 {
-    "workbench.startupEditor": "none"
+    "workbench.startupEditor": "none",
+    "remote.defaultExtensionsIfInstalledLocally": [
+        "GitHub.copilot",
+        "GitHub.copilot-chat",
+        "GitHub.vscode-pull-request-github"
+    ]
 }
