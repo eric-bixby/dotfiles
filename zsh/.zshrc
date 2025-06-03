@@ -129,13 +129,15 @@ prompt_end() {
 
 # Aliases:BEGIN -----------------------
 alias brew_leaves='brew leaves | xargs brew deps --formula --for-each | sed "s/^.*:/$(tput setaf 4)&$(tput sgr0)/"|grep -v six'
-alias cdc='cd ~ && clear'
+alias c='clear'
+alias cdc='cd ~ && c'
 alias dl='pushd .;cd_dl && ./run.sh;popd'
 alias docker_rm_stopped='docker ps --filter status=exited -q|xargs docker rm'
+alias h='history -i'
 alias matrix='cmatrix'
 alias npm_leaves='npm list -g --depth=0 2>&1|grep -v "peer dep missing"'
 alias pip_leaves='pipdeptree|grep "=="|grep -v "pip="|grep -v setuptools|grep -v six|grep -v wheel'
-alias rl='cd_git_notes home && get_reading_list.py >> ReadingList.md'
+alias rl='cd_git_notes && get_reading_list.py|sort -o ReadingList-`date "+%Y%m%d-%H%M%S"`.md'
 alias ssh_nas='ssh root@nas-ba-f3-f8.local'
 alias ssh_pi='ssh pi@raspberrypi.local'
 # Aliases:END -------------------------
