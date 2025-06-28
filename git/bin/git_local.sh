@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 function draw_line() {
     printf '%*s\n' "${COLUMNS:-$(tput cols)}" '' | tr ' ' -
