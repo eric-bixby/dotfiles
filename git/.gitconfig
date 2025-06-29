@@ -5,11 +5,14 @@
 	branch = false
 [pull]
 	rebase = false
-# for mac (doesn't work on linux):
-#[credential]
-#	helper = 
-#	helper = /usr/local/share/gcm-core/git-credential-manager
 [credential "https://dev.azure.com"]
 	useHttpPath = true
 [http]
 	postBuffer = 157286400
+# for mac (doesn't work on linux):
+#[credential]
+#	helper = 
+#	helper = /usr/local/share/gcm-core/git-credential-manager
+# for linux (stores in ~/.git-credentials:
+[credential]
+	helper = store
