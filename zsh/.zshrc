@@ -15,7 +15,9 @@ ZSH_THEME="powerlevel10k/powerlevel10k"
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(aliases brew git python zsh-autosuggestions zsh-syntax-highlighting web-search)
+# requires "brew install"
+#plugins=(brew zsh-autosuggestions zsh-syntax-highlighting)
+plugins=(aliases git python web-search)
 
 # Activate oh-my-zsh
 source $ZSH/oh-my-zsh.sh
