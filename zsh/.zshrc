@@ -1,10 +1,3 @@
-# Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
-# Initialization code that may require console input (password prompts, [y/n]
-# confirmations, etc.) must go above this block; everything else may go below.
-if [[ -r "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh" ]]; then
-  source "${XDG_CACHE_HOME:-$HOME/.cache}/p10k-instant-prompt-${(%):-%n}.zsh"
-fi
-
 # oh-my-zsh:BEGIN ---------------------
 
 # Disable colorization of ls command
@@ -142,9 +135,6 @@ alias ssh_nas='ssh root@nas-ba-f3-f8.local'
 alias ssh_pi='ssh pi@raspberrypi.local'
 # Aliases:END -------------------------
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
-[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
 # FIXME:begin: don't need nvm and venv so pick one
 
 # Enable nvm (Python)
@@ -158,9 +148,12 @@ source ~/.venv/bin/activate
 
 # FIXME:end
 
-# JDK
+# JDK (MacOS)
 export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-20.jdk/Contents/Home
 
 # Enable zsh for Docker Desktop
-#source /Users/ericbixby/.docker/init-zsh.sh || true
+#source "${HOME}/.docker/init-zsh.sh" || true
+
+# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+[[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
