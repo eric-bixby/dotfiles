@@ -29,12 +29,6 @@ pacman -S stow
 brew install stow
 ```
 
-## Cloning this repo
-
-```bash
-git clone https://github.com/eric-bixby/dotfiles.git
-```
-
 ## Using `stow`
 
 ### Installing all symlinks
@@ -72,3 +66,4 @@ BUG in find_stowed_path? Absolute/relative mismatch between Stow dir <PWD> and p
 ### Workaround: Ignore or remove existing symlinks in target folder
 
 ---
+
