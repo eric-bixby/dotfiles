@@ -98,11 +98,15 @@ cd_git_site() {
 }
 
 cd_icloud() {
-    cd "${HOME}/Library/Mobile Documents/com~apple~CloudDocs/$*"
+    cd "${HOME}/Library/Mobile Documents/$*"
 }
 
 cd_icloud_docs() {
-    cd_icloud Documents/$*
+    cd_icloud "com~apple~CloudDocs/$*"
+}
+
+cd_icloud_obsidian() {
+    cd_icloud "iCloud~md~obsidian/Documents/$*"
 }
 
 # Set custom prompt with newline
