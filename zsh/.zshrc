@@ -127,6 +127,7 @@ prompt_end() {
 # Functions:END -----------------------
 
 # Aliases:BEGIN -----------------------
+alias bm='pushd .;cd_git_bm && ./update.sh;popd'
 alias brew_leaves='brew leaves | xargs brew deps --formula --for-each | sed "s/^.*:/$(tput setaf 4)&$(tput sgr0)/"|grep -v six'
 alias c='clear'
 alias cdc='cd ~ && c'
