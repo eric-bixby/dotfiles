@@ -127,11 +127,11 @@ prompt_end() {
 # Functions:END -----------------------
 
 # Aliases:BEGIN -----------------------
-alias bm='pushd .;cd_git_bm && ./update.sh;popd'
+alias bm='pushd $PWD;cd_git_bm && ./update.sh;popd'
 alias brew_leaves='brew leaves | xargs brew deps --formula --for-each | sed "s/^.*:/$(tput setaf 4)&$(tput sgr0)/"|grep -v six'
 alias c='clear'
 alias cdc='cd ~ && c'
-alias dl='pushd .;cd_dl && ./run.sh;popd'
+alias dl='pushd $PWD;cd_dl && ./run.sh;popd'
 alias docker_rm_stopped='docker ps --filter status=exited -q|xargs docker rm'
 alias h='history -i'
 alias matrix='cmatrix'
