@@ -30,10 +30,8 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 # Set path for my personal scripts
 export PATH=$PATH:$HOME/bin
 export PATH=$PATH:~/.local/bin
-export PATH=$PATH:~/Docs/Code/BASH
-export PATH=$PATH:~/Docs/Code/BASH/MyDevApps
-export PATH=$PATH:~/Docs/Code/BASH/MyMacApps
-export PATH=$PATH:~/Docs/Code/Python
+export PATH=$PATH:~/git/home-scripts/BASH
+export PATH=$PATH:~/git/home-scripts/Python
 
 # Set path for local node tools
 export PATH=$PATH:./node_modules/.bin
