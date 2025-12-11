@@ -50,7 +50,7 @@ export HOMEBREW_NO_ENV_HINTS=true
 # Functions:BEGIN ---------------------
 
 cd_code() {
-    cd_docs Code/$*
+    cd_git home-scripts/$*
 }
 
 cd_code_bash() {
