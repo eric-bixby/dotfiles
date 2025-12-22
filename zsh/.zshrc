@@ -99,7 +99,7 @@ cd_icloud() {
 }
 
 cd_icloud_docs() {
-    cd_icloud "com~apple~CloudDocs/$*"
+    cd_icloud "com~apple~CloudDocs/Documents/$*"
 }
 
 cd_icloud_obsidian() {
