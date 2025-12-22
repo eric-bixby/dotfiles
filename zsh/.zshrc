@@ -139,25 +139,21 @@ alias ssh_nas='ssh root@nas-ba-f3-f8.local'
 alias ssh_pi='ssh pi@raspberrypi.local'
 # Aliases:END -------------------------
 
-# FIXME:begin: don't need nvm and venv so pick one
-
 # Enable nvm (Python)
 export NVM_DIR="$HOME/.nvm"
-[ -s "/usr/local/opt/nvm/nvm.sh" ] && \. "/usr/local/opt/nvm/nvm.sh"  # This loads nvm
-[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/usr/local/opt/nvm/etc/bash_completion.d/nvm"  # This loads nvm bash_completion
+[ -s "/usr/local/opt/nvm/nvm.sh" ] && \. "/usr/local/opt/nvm/nvm.sh"
+[ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/usr/local/opt/nvm/etc/bash_completion.d/nvm"
 
-# Activate venv (Python)
+# Enable venv (Python)
 # py -m venv .venv
 source ~/.venv/bin/activate
 
-# FIXME:end
-
-# JDK (MacOS)
-export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-20.jdk/Contents/Home
+# Enable JDK on MacOS
+[ -e /Library/Java ] && export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-20.jdk/Contents/Home
 
 # Enable zsh for Docker Desktop
 #source "${HOME}/.docker/init-zsh.sh" || true
 
-# To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
+# Enable p10k prompt for zsh; to customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
 
