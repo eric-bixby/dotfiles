@@ -1,13 +1,3 @@
-### This is where you input all the YouTube channels you want to have videos downloaded from.
-### It is recommended to use the ID-based URLs, they look like: '/channel/UC0vaVaSyV14uvJ4hEZDOl0Q', as the other ones might get changed.
-### You find the ID-based URL by going to a video and clicking on the uploader.
-#
-# One per line
-# Name
-#https://www.youtube.com/user/channel_username
-# Another one
-#https://www.youtube.com/channel/UC0vaVaSyV14uvJ4hEZDOl0Q
-#
 # Brian Tong
 https://www.youtube.com/feeds/videos.xml?channel_id=UCzmwnZ_ZElg6kuE6e5QS4pg
 #
