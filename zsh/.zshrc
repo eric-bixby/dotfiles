@@ -149,7 +149,7 @@ export NVM_DIR="$HOME/.nvm"
 
 # Enable venv (Python)
 # py -m venv .venv
-source ~/.venv/bin/activate
+[ -e ~/.venv/bin/activate ] && source ~/.venv/bin/activate
 
 # Enable JDK on MacOS
 [ -e /Library/Java ] && export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-20.jdk/Contents/Home
