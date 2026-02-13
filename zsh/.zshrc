@@ -32,7 +32,7 @@ export PATH=$PATH:~/.local/bin
 export PATH=$PATH:~/git/home-scripts/BASH
 export PATH=$PATH:~/git/home-scripts/Python
 
-# Set path for local node tools
+# Set path for local node tools (relative to current directory)
 export PATH=$PATH:./node_modules/.bin
 
 # Enable vscode command-line
@@ -155,7 +155,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -e /Library/Java ] && export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-20.jdk/Contents/Home
 
 # Enable zsh for Docker Desktop
-#source "${HOME}/.docker/init-zsh.sh" || true
+[ -e "${HOME}/.docker/init-zsh.sh" ] && source "${HOME}/.docker/init-zsh.sh"
 
 # Enable p10k prompt for zsh; to customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
