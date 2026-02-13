@@ -46,6 +46,8 @@ export HOMEBREW_NO_ENV_HINTS=true
 
 # Functions:BEGIN ---------------------
 
+# Code Folders
+#
 cd_code() {
     cd_git home-scripts/$*
 }
@@ -62,14 +64,12 @@ cd_code_py() {
     cd_code Python/$*
 }
 
-cd_docs() {
-    cd ~/Docs/$*
-}
-
 cd_dl() {
     cd_code_java DownloadLinks/$*
 }
 
+# Git Folders
+#
 cd_git() {
     cd ~/git/$*
 }
@@ -94,6 +94,8 @@ cd_git_site() {
     cd_git eric-bixby.github.io/$*
 }
 
+# iCloud Folders
+#
 cd_icloud() {
     cd "${HOME}/Library/Mobile Documents/$*"
 }
@@ -104,6 +106,16 @@ cd_icloud_docs() {
 
 cd_icloud_obsidian() {
     cd_icloud "iCloud~md~obsidian/Documents/$*"
+}
+
+# NAS Folders
+#
+cd_nas() {
+    cd /Volumes/$*
+}
+
+cd_nas_docs() {
+    cd_nas Documents/$*
 }
 
 # Set custom prompt with newline
@@ -136,7 +148,9 @@ alias gl_ss='git_local.sh status -s'
 alias h='history -i'
 alias matrix='cmatrix'
 alias npm_leaves='npm list -g --depth=0 2>&1|grep -v "peer dep missing"'
+alias pip='pip3'
 alias pip_leaves='pipdeptree|grep "=="|grep -v "pip="|grep -v setuptools|grep -v six|grep -v wheel'
+alias python='python3'
 alias rl='cd_git_notes && get_reading_list.py|sort -o ReadingList-`date "+%Y%m%d-%H%M%S"`.md'
 alias ssh_nas='ssh root@nas-ba-f3-f8.local'
 alias ssh_pi='ssh pi@raspberrypi.local'
