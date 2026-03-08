@@ -36,7 +36,7 @@ export PATH=$PATH:~/git/home-scripts/Python
 export PATH=$PATH:./node_modules/.bin
 
 # Enable vscode command-line
-export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PATH"
+[ -e /Applications ] && export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PATH"
 
 # Set default editor
 export EDITOR=vi
@@ -45,7 +45,7 @@ export EDITOR=vi
 export HOMEBREW_NO_ENV_HINTS=true
 
 # Have homebrew override system commands
-export PATH="/opt/homebrew/bin:$PATH"
+[ -e /opt/homebrew ] && export PATH="/opt/homebrew/bin:$PATH"
 
 # Functions:BEGIN ---------------------
 

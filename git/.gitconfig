@@ -13,6 +13,7 @@
 	helper = store
 	helper = 
 	helper = /usr/local/share/gcm-core/git-credential-manager
+	credentialStore = secretservice
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
