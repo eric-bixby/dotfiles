@@ -46,26 +46,30 @@ export HOMEBREW_NO_ENV_HINTS=true
 
 # Functions:BEGIN ---------------------
 
-# Code Folders
+# Home-Scripts Folders
 #
-cd_code() {
+cd_hs() {
     cd_git home-scripts/$*
 }
 
-cd_code_bash() {
-    cd_code BASH/$*
+cd_hs_bash() {
+    cd_hs BASH/$*
 }
 
-cd_code_java() {
-    cd_code Java/$*
+cd_hs_data() {
+    cd_hs Data/$*
 }
 
-cd_code_py() {
-    cd_code Python/$*
+cd_hs_java() {
+    cd_hs Java/$*
+}
+
+cd_hs_py() {
+    cd_hs Python/$*
 }
 
 cd_dl() {
-    cd_code_java DownloadLinks/$*
+    cd_hs_java DownloadLinks/$*
 }
 
 # Git Folders
