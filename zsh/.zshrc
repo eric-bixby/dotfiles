@@ -44,6 +44,9 @@ export EDITOR=vi
 # Hide homwbrew hints
 export HOMEBREW_NO_ENV_HINTS=true
 
+# Have homebrew override system commands
+export PATH="/opt/homebrew/bin:$PATH"
+
 # Functions:BEGIN ---------------------
 
 # Home-Scripts Folders
@@ -170,7 +173,7 @@ export NVM_DIR="$HOME/.nvm"
 [ -e ~/.venv/bin/activate ] && source ~/.venv/bin/activate
 
 # Enable JDK on MacOS
-[ -e /Library/Java ] && export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-20.jdk/Contents/Home
+[ -e /Library/Java ] && export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-25.jdk/Contents/Home
 
 # Enable zsh for Docker Desktop
 [ -e "${HOME}/.docker/init-zsh.sh" ] && source "${HOME}/.docker/init-zsh.sh"
