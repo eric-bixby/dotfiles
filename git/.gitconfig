@@ -7,12 +7,8 @@
 	rebase = false
 [http]
 	postBuffer = 157286400
-[credential "https://dev.azure.com"]
-	useHttpPath = true
 [credential]
 	helper = store
-	helper = 
-	helper = /usr/local/share/gcm-core/git-credential-manager
 [filter "lfs"]
 	clean = git-lfs clean -- %f
 	smudge = git-lfs smudge -- %f
