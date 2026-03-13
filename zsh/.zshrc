@@ -49,7 +49,7 @@ export HOMEBREW_NO_ENV_HINTS=true
 
 # Functions:BEGIN ---------------------
 
-# Home-Scripts Folders
+# Git:Home-Scripts Folders
 #
 cd_hs() {
     cd_git home-scripts/$*
