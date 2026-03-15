@@ -35,8 +35,11 @@ export PATH=$PATH:~/git/home-scripts/Python
 # Set path for local node tools (relative to current directory)
 export PATH=$PATH:./node_modules/.bin
 
-# Enable vscode command-line
+# Enable vscode CLI (code)
 [ -e /Applications ] && export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PATH"
+
+# Enable LMStudio CLI (lms)
+[ -e ~/.lmstudio/bin ] && export PATH="$PATH:/Users/ericbixby/.lmstudio/bin"
 
 # Set default editor
 export EDITOR=vi
