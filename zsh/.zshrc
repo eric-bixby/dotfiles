@@ -169,11 +169,12 @@ export NVM_DIR="$HOME/.nvm"
 [ -s "/usr/local/opt/nvm/etc/bash_completion.d/nvm" ] && \. "/usr/local/opt/nvm/etc/bash_completion.d/nvm"
 
 # Enable venv (Python)
-# py -m venv .venv
+# one-time setup: py -m venv .venv
 [ -e ~/.venv/bin/activate ] && source ~/.venv/bin/activate
 
 # Enable JDK on MacOS
-[ -e /Library/Java ] && export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-25.jdk/Contents/Home
+[ -e /Library/Java/JavaVirtualMachines/jdk-25.jdk ] && \
+    export JAVA_HOME=/Library/Java/JavaVirtualMachines/jdk-25.jdk/Contents/Home
 
 # Enable zsh for Docker Desktop
 [ -e "${HOME}/.docker/init-zsh.sh" ] && source "${HOME}/.docker/init-zsh.sh"
