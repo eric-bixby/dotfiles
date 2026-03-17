@@ -52,8 +52,28 @@ export HOMEBREW_NO_ENV_HINTS=true
 
 # Functions:BEGIN ---------------------
 
-# Git:Home-Scripts Folders
+# Git Folders
 #
+cd_git() {
+    cd ~/git/$*
+}
+
+cd_asb() {
+    cd_git auto-sort-bookmarks-webext/$*
+}
+
+cd_bm() {
+    cd_git bookmarks/$*
+}
+
+cd_dl() {
+    cd_hs_java DownloadLinks/$*
+}
+
+cd_dot() {
+    cd_git dotfiles/$*
+}
+
 cd_hs() {
     cd_git home-scripts/$*
 }
@@ -74,33 +94,11 @@ cd_hs_py() {
     cd_hs Python/$*
 }
 
-cd_dl() {
-    cd_hs_java DownloadLinks/$*
-}
-
-# Git Folders
-#
-cd_git() {
-    cd ~/git/$*
-}
-
-cd_git_asb() {
-    cd_git auto-sort-bookmarks-webext/$*
-}
-
-cd_git_bm() {
-    cd_git bookmarks/$*
-}
-
-cd_git_dot() {
-    cd_git dotfiles/$*
-}
-
-cd_git_notes() {
+cd_notes() {
     cd_git notes/$*
 }
 
-cd_git_site() {
+cd_site() {
     cd_git eric-bixby.github.io/$*
 }
 
