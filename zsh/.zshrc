@@ -118,14 +118,14 @@ cd_icloud_obsidian() {
     cd_icloud "iCloud~md~obsidian/Documents/$*"
 }
 
-# NAS Folders
+# Volumes Folders
 #
-cd_nas() {
+cd_vol() {
     cd /Volumes/$*
 }
 
-cd_nas_docs() {
-    cd_nas Documents/$*
+cd_vol_docs() {
+    cd_vol Documents/$*
 }
 
 # Set custom prompt with newline
