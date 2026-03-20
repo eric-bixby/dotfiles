@@ -42,7 +42,7 @@ export PATH=$PATH:./node_modules/.bin
 [ -e ~/.lmstudio/bin ] && export PATH="$PATH:/Users/ericbixby/.lmstudio/bin"
 
 # Set default editor
-export EDITOR=vi
+export EDITOR=vim
 
 # Hide homwbrew hints
 export HOMEBREW_NO_ENV_HINTS=true
