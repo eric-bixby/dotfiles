@@ -144,17 +144,17 @@ prompt_end() {
 # Functions:END -----------------------
 
 # Aliases:BEGIN -----------------------
-alias bm='pushd $PWD;cd_bm && ./update.sh;popd'
+alias bm='cd_bm && ./update.sh'
 alias brew_leaves='brew leaves | xargs brew deps --formula --for-each | sed "s/^.*:/$(tput setaf 4)&$(tput sgr0)/"|grep -v six'
 alias c='clear'
 alias cdc='cd ~ && c'
-alias dl='pushd $PWD;cd_dl && ./run.sh;popd'
+alias dl='cd_dl && ./run.sh'
 alias docker_rm_stopped='docker ps --filter status=exited -q|xargs docker rm'
 alias gl_p='git_local.sh pull'
 alias gl_s='git_local.sh status'
 alias gl_ss='git_local.sh status -s'
 alias h='history -i'
-alias ma='pushd $PWD;cd_hs_data && get_mac_apps.sh > mac_apps-$HOST.txt;popd'
+alias ma='cd_hs_data && get_mac_apps.sh > mac_apps-$HOST.txt'
 alias matrix='cmatrix'
 alias npm_leaves='npm list -g --depth=0 2>&1|grep -v "peer dep missing"'
 alias pip='pip3'
