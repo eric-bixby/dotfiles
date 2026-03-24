@@ -144,7 +144,7 @@ prompt_end() {
 # Functions:END -----------------------
 
 # Aliases:BEGIN -----------------------
-alias bm='pushd $PWD;cd_git_bm && ./update.sh;popd'
+alias bm='pushd $PWD;cd_bm && ./update.sh;popd'
 alias brew_leaves='brew leaves | xargs brew deps --formula --for-each | sed "s/^.*:/$(tput setaf 4)&$(tput sgr0)/"|grep -v six'
 alias c='clear'
 alias cdc='cd ~ && c'
@@ -154,6 +154,7 @@ alias gl_p='git_local.sh pull'
 alias gl_s='git_local.sh status'
 alias gl_ss='git_local.sh status -s'
 alias h='history -i'
+alias ma='pushd $PWD;cd_hs_data && get_mac_apps.sh > mac_apps-$HOST.txt;popd'
 alias matrix='cmatrix'
 alias npm_leaves='npm list -g --depth=0 2>&1|grep -v "peer dep missing"'
 alias pip='pip3'
