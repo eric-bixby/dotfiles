@@ -169,7 +169,7 @@ alias python='python3'
 alias rl='cd_git_notes && get_reading_list.py|sort -o ReadingList-`date "+%Y%m%d-%H%M%S"`.md'
 alias ssh_nas='ssh root@nas-ba-f3-f8.local'
 alias ssh_pi='ssh pi@raspberrypi.local'
-alias update_apps'get_apps && gpa "Update list of installed apps"'
+alias update_apps='get_apps && gpa "Update list of installed apps"'
 # Aliases:END -------------------------
 
 # Enable nvm (Python)
