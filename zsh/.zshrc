@@ -126,6 +126,12 @@ cd_vol_docs() {
     cd_vol Documents/$*
 }
 
+# Git shortcuts
+#
+gpa() {
+    git add -A && git commit ${1:+-m "$1"} && git push
+}
+
 # Set custom prompt with newline
 prompt_end() {
     if [[ -n $CURRENT_BG ]]; then
@@ -154,7 +160,6 @@ alias get_apps='cd_hs_data && get_mac_apps.sh |sort -f -o mac_apps-`hostname`.tx
 alias gl_p='git_local.sh pull'
 alias gl_s='git_local.sh status'
 alias gl_ss='git_local.sh status -s'
-alias gpa='git add -A && git commit && git push'
 alias h='history -i'
 alias matrix='cmatrix'
 alias npm_leaves='npm list -g --depth=0 2>&1|grep -v "peer dep missing"'
