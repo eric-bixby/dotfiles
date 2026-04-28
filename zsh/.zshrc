@@ -154,7 +154,7 @@ alias cdc='cd ~ && c'
 alias diff_apps='diff_apps_all.sh'
 alias dl='cd_dl && ./run.sh'
 alias docker_rm_stopped='docker ps --filter status=exited -q|xargs docker rm'
-alias get_apps='cd_hs_data && get_mac_apps.sh |sort -f -o mac_apps-`hostname`.txt'
+alias get_apps='cd_hs_data && get_mac_apps.sh |sort -f -o mac_apps-`hostname`.txt && gpa "Update list of installed apps"'
 alias gl_p='git_local.sh pull'
 alias gl_s='git_local.sh status'
 alias gl_ss='git_local.sh status -s'
@@ -167,7 +167,6 @@ alias python='python3'
 alias rl='cd_git_notes && get_reading_list.py|sort -o ReadingList-`date "+%Y%m%d-%H%M%S"`.md'
 alias ssh_nas='ssh root@nas-ba-f3-f8.local'
 alias ssh_pi='ssh pi@raspberrypi.local'
-alias update_apps='get_apps && gpa "Update list of installed apps"'
 # Aliases:END -------------------------
 
 # Enable nvm (Python)
