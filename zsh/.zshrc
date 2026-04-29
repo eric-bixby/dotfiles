@@ -67,6 +67,10 @@ cd_dot() {
     cd_git dotfiles/$*
 }
 
+cd_hc() {
+    cd_git home-code/$*
+}
+
 cd_hs() {
     cd_git home-scripts/$*
 }
