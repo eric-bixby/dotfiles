@@ -63,10 +63,6 @@ cd_bm() {
     cd_git bookmarks/$*
 }
 
-cd_dl() {
-    cd_hs_java DownloadLinks/$*
-}
-
 cd_dot() {
     cd_git dotfiles/$*
 }
@@ -81,10 +77,6 @@ cd_hs_bash() {
 
 cd_hs_data() {
     cd_hs Data/$*
-}
-
-cd_hs_java() {
-    cd_hs Java/$*
 }
 
 cd_hs_py() {
