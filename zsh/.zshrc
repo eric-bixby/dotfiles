@@ -29,7 +29,7 @@ test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell
 
 # Set path for my personal scripts
 export PATH=$PATH:~/.local/bin
-export PATH=$PATH:~/git/home-scripts/BASH
+export PATH=$PATH:~/git/home-scripts/Shell
 export PATH=$PATH:~/git/home-scripts/Python
 
 # Set path for local node tools (relative to current directory)
@@ -75,16 +75,16 @@ cd_hs() {
     cd_git home-scripts/$*
 }
 
-cd_hs_bash() {
-    cd_hs BASH/$*
-}
-
 cd_hs_data() {
     cd_hs Data/$*
 }
 
 cd_hs_py() {
     cd_hs Python/$*
+}
+
+cd_hs_sh() {
+    cd_hs Shell/$*
 }
 
 cd_notes() {
